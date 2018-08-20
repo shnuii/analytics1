@@ -125,3 +125,12 @@ students$grades = factor(students$grades, ordered=T, levels = c('C','B','A'))
 students$grades
 barplot(table(students$grades), col = 1:3)
 
+####-------------
+students
+write.csv(students,'./data/studentdata.csv')
+students2 = read.csv('./data/studentdata.csv')
+head(students2)
+students3 = read.csv(file.choose())
+head(students3)
+India = read.csv(file.choose())
+
